@@ -13,19 +13,19 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		double currentMoney = 23; // set dinero
+		double currentMoney = 1; // set dinero
 		Currency dolar = Currency.USD;
 		Currency euro = Currency.EUR;
 		Currency libras = Currency.GBP;
 		Currency yanes = Currency.JPY;
-		Currency yen = Currency.KRW;
+		Currency ars = Currency.ARS;
 		
 		// DecimalFormat disminuye los decimales usando su funcion format();
-		DecimalFormat df = new DecimalFormat("#.00");
+		DecimalFormat df = new DecimalFormat("0.00");
 												     // set divisa
-		Money monedaActual = new Money(currentMoney, dolar);
+		Money monedaActual = new Money(50, dolar);
 													// set divisa de cambio
-		Money monedaCambiada = monedaActual.convertTo(euro);
+		Money monedaCambiada = monedaActual.convertTo(ars);
 		
 		System.out.println("Cambio: " + monedaActual.getAmount() + " " + monedaActual.getCurrency()
 							+ " = " + df.format(monedaCambiada.getAmount()) + " " + monedaCambiada.getCurrency());

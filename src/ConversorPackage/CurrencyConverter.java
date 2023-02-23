@@ -22,32 +22,30 @@ public class CurrencyConverter {
 			case JPY:
 				exchangeRate = getExchangeRate(Currency.JPY, targetCurrency);
 				break;
-			case KRW:
-				exchangeRate = getExchangeRate(Currency.KRW, targetCurrency);
+			case ARS:
+				exchangeRate = getExchangeRate(Currency.ARS, targetCurrency);
 				break;
 			default:
 				throw new IllegalArgumentException("Moneda no soportada: " + targetCurrency);
 			}
 
-		double convertedAmount = amount * exchangeRate; // convertir la cantidad a la moneda de destino
+		double convertedAmount = amount * exchangeRate; // Operación de cambio: Moneda Original * Moneda Objetivo
 
-		// crear y devolver una nueva instancia de Money con la cantidad convertida y la
-		// moneda de destino
+		// crear y devolver una nueva instancia de Money con la cantidad convertida y la moneda Objetivo
 		return new Money(convertedAmount, targetCurrency);
 	}
 
-	// Este método contiene los índices en forma de matriz para coincidir monedas de
-	// origen y destino
+	// Este método contiene los índices en forma de matriz para coincidir monedas de origen y destino
 	public static double getExchangeRate(Currency fromCurrency, Currency toCurrency) {
 
-		// Coordinadas para la selección del tipo de cambio
+		// Cada fila represneta una (1) unidad de divisa y cada columna cuanto vale esa unidad en otra divisa
 		double[][] exchangeRates = {
-				// USD EUR GBP JPY KRW
-				{ 1.0, 0.8, 0.7, 109.0, 1140.0 }, // USD
-				{ 1.2, 1.0, 0.9, 132.0, 1396.0 }, // EUR
-				{ 1.4, 1.1, 1.0, 156.0, 1649.0 }, // GBP
-				{ 0.009, 0.007, 0.006, 1.0, 10.5 }, // JPY
-				{ 0.0009, 0.0007, 0.0006, 0.095, 1.0 } // KRW
+				// USD EUR GBP JPY ARS
+				{ 1.0, 0.94, 0.83, 134.74, 195.55 }, // USD
+				{ 1.06, 1.0, 0.88, 142.84, 207.32}, // EUR
+				{ 1.2, 1.14, 1.0, 162.34, 235.53}, // GBP
+				{ 0.0074, 0.007, 0.0062, 1.0, 1.45 }, // JPY
+				{ 0.0051, 0.0048, 235.64, 1.45, 1.0 } // ARS
 		};
 
 		int fromIndex = fromCurrency.ordinal();
