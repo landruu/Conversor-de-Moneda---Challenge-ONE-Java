@@ -1,6 +1,6 @@
 # Conversor-de-Moneda---Challenge-ONE-Java
 
-<h1><span style="color: #ecf0f1;"><strong>Conversor de moneda en Java</strong></span></h1>
+<h2><span style="color: #ecf0f1;"><strong>Conversor de moneda en Java</strong></span></h2>
 <p>Este proyecto consiste en una aplicaci&oacute;n Java que permite convertir entre diferentes monedas utilizando tipos de cambio preestablecidos.</p>
 <h2><span style="color: #ecf0f1;">C&oacute;mo usar</span></h2>
 <p>Para usar la aplicaci&oacute;n, simplemente ejecute el m&eacute;todo main en la clase MainWhitJOptionPane. Al hacerlo, se le pedir&aacute; que ingrese un monto en la moneda de origen, luego se le pedir&aacute; que seleccione la moneda de origen y la moneda de destino, y finalmente se mostrar&aacute; el monto convertido en la moneda de destino.</p>
