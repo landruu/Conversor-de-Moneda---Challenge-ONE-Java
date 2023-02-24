@@ -21,5 +21,5 @@
 <li>Se realizan verificaciones b&aacute;sicas de entrada del usuario, lo que significa que si el usuario ingresa una entrada no v&aacute;lida, la aplicaci&oacute;n puede bloquearse.</li>
 <li>Solo se admiten unas pocas monedas, por lo que si desea convertir entre monedas que no est&aacute;n en la lista, deber&aacute; agregarlas manualmente.</li>
 </ul>
-<p>#Autor: Andr&eacute;s garc&iacute;a<br />#Linkedln: @autentoken</p>
+<p>#Autor: Andr&eacute;s garc&iacute;a<br /><a href="https://www.linkedin.com/in/autentoken/">#Linkedln: @autentoken</a></p>
 <div id="_rc_sig"></div>
