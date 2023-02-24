@@ -1,4 +1,4 @@
-# Conversor-de-Moneda---Challenge-ONE-Java
+# Challenge-ONE-Java
 
 <h2><span style="color: #ecf0f1;"><strong>Conversor de moneda en Java</strong></span></h2>
 <p>Este proyecto consiste en una aplicaci&oacute;n Java que permite convertir entre diferentes monedas utilizando tipos de cambio preestablecidos.</p>
